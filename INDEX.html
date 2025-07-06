@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Vision – AI-Powered Home Security</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Secure Vision</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#product-details">Product Details</a></li>
+                <li><a href="#payment">Payment</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h1>Secure Vision – AI-Powered Home Security</h1>
+                <p>Secure Vision provides intelligent CCTV surveillance integrated with AI face recognition. It alerts users when an unknown face is detected in real-time.</p>
+                <a href="#product-details" class="btn-primary">Learn More</a>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="product-details" class="product-details">
+            <div class="container">
+                <h2>Product Features</h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <i class="fas fa-robot icon"></i>
+                        <h3>AI-based Face Recognition</h3>
+                        <p>Advanced artificial intelligence identifies known and unknown faces with high accuracy.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-bell icon"></i>
+                        <h3>Real-time Intruder Alerts</h3>
+                        <p>Receive instant notifications on your device when an unauthorized person is detected.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-images icon"></i>
+                        <h3>Image Storage of Visitors</h3>
+                        <p>Securely stores images of all detected visitors for your review and records.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-user-friends icon"></i>
+                        <h3>User-Friendly Interface</h3>
+                        <p>Intuitive and easy-to-navigate interface for seamless control and monitoring.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="payment" class="payment">
+            <div class="container">
+                <h2>Activate Your Secure Vision Access</h2>
+                <p class="payment-message">Pay securely to activate your access to Secure Vision software.</p>
+                <form id="payment-form" class="payment-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="card-number">Card Number</label>
+                        <input type="text" id="card-number" name="card-number" placeholder="**** **** **** ****" required maxlength="19">
+                    </div>
+                    <button type="submit" class="btn-primary">Pay Now</button>
+                </form>
+                <div id="thank-you-message" class="thank-you-message" style="display: none;">
+                    <h3>Thank You for Your Payment!</h3>
+                    <p>Your access to Secure Vision software has been successfully activated.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> Email: <a href="mailto:support@securevision.com">support@securevision.com</a></p>
+                    <p><i class="fas fa-phone"></i> Phone: +91-1234567890</p>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="contact-message">Your Message</label>
+                        <textarea id="contact-message" name="message" rows="6" placeholder="Type your message here..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-banner"></div> </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Secure Vision. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAPC2hGT1smxyO_c92orfF2YlK1zavgA6U",
+    authDomain: "vision-3dcaa.firebaseapp.com",
+    projectId: "vision-3dcaa",
+    storageBucket: "vision-3dcaa.firebasestorage.app",
+    messagingSenderId: "160269492275",
+    appId: "1:160269492275:web:e86789af281ac1b5fcc346",
+    measurementId: "G-KVXD8E8VGC"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</body>
+</html>
